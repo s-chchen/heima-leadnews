@@ -1,0 +1,13 @@
+# Project exclude paths
+/heima-leadnews-common/target/
+/heima-leadnews-feign-api/target/
+/heima-leadnews-gateway/heima-leadnews-wemedia-gateway/target/
+/heima-leadnews-model/target/
+/heima-leadnews-service/heima-leadnews-article/target/
+/heima-leadnews-service/heima-leadnews-schedule/target/
+/heima-leadnews-service/heima-leadnews-user/target/
+/heima-leadnews-service/heima-leadnews-wemedia/target/
+/heima-leadnews-test/algorithm/target/
+/heima-leadnews-test/kafka-demo/target/
+/heima-leadnews-test/tess4j-demo/target/
+/heima-leadnews-utils/target/
