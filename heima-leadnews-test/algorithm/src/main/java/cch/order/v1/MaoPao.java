@@ -177,4 +177,42 @@ public class MaoPao {
 
     }
 
+    public static void mergeSort(int[] arr, int start, int end) {
+        
+        if (start >= end) 
+            return;
+        
+        int len = end - start + 1;
+        int mid = (start+end)/2;
+        int[] temp = new int[len];
+        int temp_idx = 0;
+        
+        int i = start;
+        int j = mid + 1;
+        
+        mergeSort(arr, start, mid);
+        mergeSort(arr, mid + 1, end);
+        
+        while(i<=mid && j<= end) {
+            if (arr[i] <= arr[j]) {
+                temp[temp_idx++] = arr[i++];
+            } else {
+                temp[temp_idx++] = arr[j++];
+            }
+        }
+        
+        while(i<=mid) {
+            temp[temp_idx++] = arr[i++];
+        }
+        
+        while (j<=end) {
+            temp[temp_idx++] = arr[j++];
+        }
+
+        for (int k = 0; k < temp_idx; k++) {
+            arr[start + k] = temp[k];
+        }
+        
+    }
+
 }
