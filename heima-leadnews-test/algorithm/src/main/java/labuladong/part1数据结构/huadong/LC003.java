@@ -1,4 +1,4 @@
-package labuladong.huadong;
+package labuladong.part1数据结构.huadong;
 
 
 import java.util.HashSet;
@@ -15,7 +15,7 @@ import java.util.Set;
  *
  * */
 
-public class lc003 {
+public class LC003 {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
