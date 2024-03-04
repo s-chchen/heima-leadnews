@@ -13,7 +13,7 @@ import java.util.Scanner;
  * @Time: 12:21
  * @Description:
  */
-public class Main02 {
+public class Main0268 {
 
 
     public static void main(String[] args) {
