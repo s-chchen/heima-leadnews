@@ -25,11 +25,11 @@ public class LC003 {
         Set<Character> set = new HashSet<>();
         int res = 0;
 
-        for (int i = 0; i < len; i++) {
+        for (int i = 0, j = 0; i < len; i++) {
             if (i > 0) {
                 set.remove(s.charAt(i - 1));
             }
-            for (int j = i; j < len; j++) {
+            for (; j < len; j++) {
                 if (set.contains(s.charAt(j))) {
                     res = Math.max(res, j - i);
                     break;
